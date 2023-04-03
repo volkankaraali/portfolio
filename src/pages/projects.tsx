@@ -4,7 +4,8 @@ import React from 'react';
 // components
 import Layout from '@/components/Layout';
 
-type Props = {}
+type Props = {
+}
 
 const Projects = (props: Props) => {
   return (

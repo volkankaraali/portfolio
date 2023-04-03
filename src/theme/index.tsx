@@ -3,9 +3,6 @@ import { createTheme, ThemeProvider as MUIThemeProvider } from '@mui/material/st
 import { CssBaseline } from '@mui/material';
 import palette from './palette';
 import { ThemeContextType, useSettings } from '@/context/SettingsContext';
-import { poppins } from '@/pages/_app';
-
-
 
 
 type Props = {

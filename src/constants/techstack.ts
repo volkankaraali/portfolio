@@ -1,0 +1,17 @@
+export const TECHSTACK = [
+  {name:'Javascript', svg:"/icons/javascript.svg"},
+  {name:'Typescript', svg:"/icons/typescript.svg"},
+  {name:'Reactjs', svg:"/icons/react.svg"},
+  {name:'Nextjs', svg:"/icons/nextjs.svg"},
+  {name:'Redux', svg:"/icons/redux.svg"},
+  {name:'GraphQL', svg:"/icons/graphql.svg"},
+  {name:'Nodejs', svg:"/icons/node-js.svg"},
+  {name:'Express', svg:"/icons/express-js.svg"},
+  {name:'Mongo DB', svg:"/icons/mongodb.svg"},
+  {name:'Tailwindcss', svg:"/icons/tailwindcss.svg"},
+  {name:'Material UI', svg:"/icons/material-ui.svg"},
+  {name:'Bootstrap', svg:"/icons/bootstrap.svg"},
+  {name:'HTML', svg:"/icons/html.svg"},
+  {name:'CSS', svg:"/icons/css.svg"},
+  {name:'SASS', svg:"/icons/sass.svg"},
+]

@@ -7,13 +7,15 @@ import { useRouter } from 'next/router';
 // palette
 import palette from '@/theme/palette';
 import { PATHS } from '@/constants';
+import { ThemeContextType, useSettings } from '@/context/SettingsContext';
+import DarkModeButton from '../DarkModeButton';
 
 
 function Header() {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-
+  const { themeMode } = useSettings() as ThemeContextType;
 
   return (
     <Box component="header">
@@ -29,9 +31,13 @@ function Header() {
                 py: 0.5,
                 mr: 1,
                 borderRadius: 2,
-                color: '#fff',
+                color: themeMode === 'dark' ? palette.dark.grey[200] : palette.dark.grey[900],
                 borderBottom: currentRoute === path.route ? `2px solid ${palette.dark.primary.main}` : '',
-                textDecoration: 'none'
+                textDecoration: 'none',
+                ":hover": {
+                  color: palette.dark.primary.main,
+                  transition: '0.3s linear',
+                }
 
               }}
             >
@@ -39,9 +45,9 @@ function Header() {
             </Box>
           ))
         }
-
-      </Container>
-    </Box>
+        <DarkModeButton />
+      </Container >
+    </Box >
   )
 }
 
