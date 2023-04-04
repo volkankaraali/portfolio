@@ -4,7 +4,7 @@ import React, { ReactNode, createContext, useContext, useEffect, useState } from
 export type Theme = "light" | "dark";
 
 export type ThemeContextType = {
-  themeMode: Theme;
+  themeMode: Theme | null | undefined;
   changeTheme: (theme: Theme) => void;
 }
 
@@ -16,19 +16,22 @@ const SettingsContext = createContext<ThemeContextType | null>(null)
 
 const SettingsProvider: React.FC<Props> = ({ children }) => {
 
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setThemeMode] = useState<Theme | null>();
 
 
   useEffect(() => {
-    console.log(localStorage.getItem("themeMode"))
-    const stored = localStorage.getItem("themeMode") as Theme || null;
-    stored && setTheme(stored)
+    const stored = localStorage.getItem("themeMode") as Theme;
+    stored ? setThemeMode(stored) : setThemeMode('dark')
   }, [])
 
+  const changeTheme = (mode: Theme) => {
+    localStorage.setItem('themeMode', mode);
+    setThemeMode(mode);
+  };
 
   const values = {
     themeMode: theme,
-    changeTheme: setTheme
+    changeTheme
   }
 
   return (

@@ -1,11 +1,13 @@
 // libraries
 import Head from 'next/head';
-import { Box, Container } from '@mui/material';
+import { Box, Container, Divider } from '@mui/material';
 
 // components
 import Layout from '@/components/Layout';
 import Infos from '@/components/Infos';
 import TechStack from '@/components/TechStack';
+import ContactForm from '@/components/ContactForm';
+import palette from '@/theme/palette';
 
 
 export default function Home() {
@@ -20,10 +22,13 @@ export default function Home() {
         <link rel="icon" href="/code-slash.svg" />
       </Head>
 
-      <Box sx={{ height: '100%' }}>
-        <Container sx={{ mt: { xs: 5, sm: 20 } }}>
+      <Box sx={{ height: '100%', pb: 2 }}>
+        <Container sx={{ mt: { xs: 5, sm: 5 } }}>
+
           <Infos />
           <TechStack />
+          <Divider sx={{ my: 2, backgroundColor: palette.dark.primary.main }} />
+          <ContactForm />
         </Container>
       </Box>
 

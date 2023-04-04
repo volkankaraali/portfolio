@@ -38,7 +38,6 @@ function Header() {
                   color: palette.dark.primary.main,
                   transition: '0.3s linear',
                 }
-
               }}
             >
               {path.name}
