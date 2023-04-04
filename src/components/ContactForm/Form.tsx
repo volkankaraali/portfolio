@@ -72,7 +72,7 @@ function Form() {
     })
       .then(res => {
         setLoading(false)
-        return displayToastify(res.data.message, 200);
+        return displayToastify("messages sent successfully", 200);
       })
       .catch(err => {
         setLoading(false);

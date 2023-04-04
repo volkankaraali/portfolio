@@ -14,7 +14,7 @@ export default async function handler(
   res: NextApiResponse<Response>
 ) {
   if (req.method === 'POST') {
-    const { email, subject, message} = req.body;
+    const { email, subject, message } = req.body;
 
     // create transport
     const transport = nodemailer.createTransport({
@@ -41,18 +41,18 @@ export default async function handler(
     // mail options
     const receiveMailOptions={
       from:email,
-      to:'volkankaraali1@gmail.com',
+      to:process.env.RECEIVE_SEND_EMAIL,
       subject:"You have a message from your website",
       html:renderTemplate(receiveTemplate, {email,subject,message})
     }
 
     const feedBackMailOptions={
       from:{
-        name:"volkankaraali.vercel.app",
-        address:"volkankaraali1@gmail.com"
+        name:process.env.FEEDBACK_SEND_TITLE,
+        address:process.env.FEEDBACK_SEND_EMAIL,
       },
       to:email,
-      subject:'Volkan Karaali',
+      subject:process.env.FEEDBACK_SEND_SUBJECT,
       html:renderTemplate(feedBackTemplate, {email})
     }
 
