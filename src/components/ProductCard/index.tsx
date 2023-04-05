@@ -33,7 +33,7 @@ export default function ProductCard({ item }: Props) {
       <Image
         height={200}
         width={373}
-        src={item.img}
+        src={`${item.img}`}
         alt={item.title}
       />
       <Box
