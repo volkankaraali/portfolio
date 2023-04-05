@@ -16,12 +16,12 @@ const SettingsContext = createContext<ThemeContextType | null>(null)
 
 const SettingsProvider: React.FC<Props> = ({ children }) => {
 
-  const [theme, setThemeMode] = useState<Theme | null>();
+  const [theme, setThemeMode] = useState<Theme>("dark");
 
 
   useEffect(() => {
     const stored = localStorage.getItem("themeMode") as Theme;
-    stored ? setThemeMode(stored) : setThemeMode('dark')
+    stored && setThemeMode(stored)
   }, [])
 
   const changeTheme = (mode: Theme) => {

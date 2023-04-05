@@ -7,7 +7,6 @@ import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
 import ProductCard from '@/components/ProductCard';
 import { getProjectData } from '../../utils/getProjectData';
-import { useInfiniteQuery } from '@tanstack/react-query';
 
 
 type Props = {
