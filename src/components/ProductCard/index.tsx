@@ -31,11 +31,16 @@ export default function ProductCard({ item }: Props) {
         }}
       />
       <Image
-        height={200}
         width={373}
+        height={200}
+        sizes="100vw"
+        style={{
+          width: '100%',
+        }}
         src={`${item.img}`}
         alt={item.title}
       />
+
       <Box
         sx={{
           height: 213,

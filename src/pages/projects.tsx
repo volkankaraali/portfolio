@@ -38,7 +38,7 @@ const Projects = (props: Props) => {
           <Grid container spacing={2}>
             {
               projects.map((project: ProjectData) => (
-                <Grid key={project?.title} item md={4} sx={{ width: 400, height: 500 }}>
+                <Grid key={project?.title} item xs={12} sm={6} md={4} sx={{ width: 400, height: 500 }}>
                   <ProductCard item={project} />
                 </Grid>
               ))
