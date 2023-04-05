@@ -59,7 +59,7 @@ function Form() {
   };
 
   // react hook form init
-  const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({
+  const { reset, register, handleSubmit, formState: { errors } } = useForm<Inputs>({
     resolver: yupResolver(validateSchema)
   });
 
@@ -72,10 +72,12 @@ function Form() {
     })
       .then(res => {
         setLoading(false)
+        reset();
         return displayToastify("messages sent successfully", 200);
       })
       .catch(err => {
         setLoading(false);
+        reset();
         return displayToastify(err.message);
       })
   };
