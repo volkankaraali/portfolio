@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <Box component="header">
-      <Container sx={{ height: 70, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Container sx={{ position: 'relative', height: 70, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         {
           PATHS.map(path => (
             <Box
@@ -44,7 +44,9 @@ function Header() {
             </Box>
           ))
         }
-        <DarkModeButton />
+        <Box sx={{ position: 'absolute', right: 20 }}>
+          <DarkModeButton />
+        </Box>
       </Container >
     </Box >
   )

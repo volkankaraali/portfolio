@@ -1,4 +1,4 @@
-import { ThemeContextType, useSettings, Theme } from '@/context/SettingsContext';
+import { ThemeContextType, useSettings } from '@/context/SettingsContext';
 import React from 'react';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';

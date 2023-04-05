@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import palette from '@/theme/palette';
 import Form from './Form';
 
 
