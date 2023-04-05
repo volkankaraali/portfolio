@@ -67,12 +67,12 @@ export default function ProductCard({ item }: Props) {
         </CardContent>
         <CardActions disableSpacing>
           <Tooltip title="live demo" placement="top">
-            <IconButton aria-label="add to favorites">
+            <IconButton aria-label="live" component="a" href={item.live} target="_blank" disabled={!item.live ? true : false} sx={{ opacity: !item.live ? 0.2 : 1 }}>
               <LaunchIcon color="primary" />
             </IconButton>
           </Tooltip>
           <Tooltip title="source code" placement="top">
-            <IconButton aria-label="share" >
+            <IconButton aria-label="share" component="a" href={item.github} target="_blank"  >
               <GitHubIcon color="primary" />
             </IconButton>
           </Tooltip>
