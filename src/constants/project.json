@@ -27,7 +27,7 @@
     {
       "title":"ikinci el",
       "description":"an application that my patika & protein react bootcamp's final project. the project basically provide to sell and buying second hand products.",
-      "img":"/images/projects/ikinciel.png",
+      "img":"/images/ikinciel.png",
       "github":"https://github.com/volkankaraali/ikinci-el",
       "live":"https://ikinci-el.netlify.app/",
       "techStack":["reactjs","formik","yup","scss","mantine","react-router","axios","chakra ui"]
@@ -35,7 +35,7 @@
     {
       "title":"movies&series",
       "description":"an application that finds popular movies and series or what you typing.",
-      "img":"/images/projects/movieapp.png",
+      "img":"/images/movieapp.png",
       "github":"https://github.com/volkankaraali/react-movieandserie-app",
       "live":"https://react-movieserie-app.netlify.app/",
       "techStack":["reactjs","react-router","axios","react-helmet","taildwindcss","redux"]
@@ -43,7 +43,7 @@
     {
       "title":"mathgame",
       "description":"an application that game of math problems.",
-      "img":"/images/projects/mathgame.png",
+      "img":"/images/mathgame.png",
       "github":"https://github.com/volkankaraali/react-movieandserie-app",
       "live":"https://react-movieserie-app.netlify.app/",
       "techStack":["reactjs","css","react-router"]
@@ -51,7 +51,7 @@
     {
       "title":"marvelapp",
       "description":"an application that finds and display marvel characters.",
-      "img":"/images/projects/marvelapp.png",
+      "img":"/images/marvelapp.png",
       "github":"https://github.com/volkankaraali/marvel-app",
       "live":"https://react-marvelapp.netlify.app/",
       "techStack":["reactjs","i18next","react-router","axios","css"]
@@ -59,7 +59,7 @@
     {
       "title":"weather",
       "description":"an application that weather. displays a week weather of city that you type.",
-      "img":"/images/projects/weatherapp.png",
+      "img":"/images/weatherapp.png",
       "github":"https://github.com/volkankaraali/react-context-weather-app",
       "live":"https://react-weather-app-context.netlify.app/",
       "techStack":["reactjs","axios","tailwindcss","react-country-flag"]
@@ -67,7 +67,7 @@
     {
       "title":"color-flipper",
       "description":"an application that gives color's hex code you pick",
-      "img":"/images/projects/colorflipper.png",
+      "img":"/images/colorflipper.png",
       "github":"https://github.com/volkankaraali/color-flipper",
       "live":"https://volkankaraali.github.io/color-flipper/",
       "techStack":["javascript","bootstrap"]
@@ -75,7 +75,7 @@
     {
       "title":"coin app",
       "description":"an application that finds coin's data you type",
-      "img":"/images/projects/coinapp.png",
+      "img":"/images/coinapp.png",
       "github":"https://github.com/volkankaraali/react-coin",
       "live":"https://react-coinapp.netlify.app/",
       "techStack":["reactjs","axios","tailwindcss","recharts","react-router"]
@@ -83,7 +83,7 @@
     {
       "title":"shop",
       "description":"an application that add project to your basket and get bill.",
-      "img":"/images/projects/shop.png",
+      "img":"/images/shop.png",
       "github":"https://redux-shopapp.netlify.app/",
       "live":"https://react-coinapp.netlify.app/",
       "techStack":["reactjs","axios","tailwindcss","redux","mantine"]
