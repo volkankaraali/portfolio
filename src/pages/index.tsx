@@ -16,10 +16,6 @@ export default function Home() {
     <Layout>
       <Head>
         <title>Volkan Karaali | Home</title>
-
-        <meta name="description" content="volkan karaali" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/code-slash.svg" />
       </Head>
 
       <Box sx={{ height: '100%', pb: 2 }}>
@@ -33,6 +29,8 @@ export default function Home() {
       </Box>
 
 
+
     </Layout >
   )
 }
+

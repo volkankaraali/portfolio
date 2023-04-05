@@ -1,8 +1,11 @@
 import { Box, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import palette from '@/theme/palette';
 import Image from 'next/image';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+
 
 function Infos() {
 
@@ -82,13 +85,19 @@ function Infos() {
             i live in <Typography component="span" color="primary">Istanbul, Turkey.</Typography>
           </Box>
           <Box component="li" >
-            github: <Typography component="a" target="_blank" href='https://github.com/volkankaraali' color="primary">/volkankaraali</Typography>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <GitHubIcon />: <Typography component="a" target="_blank" href='https://github.com/volkankaraali' color="primary">/volkankaraali</Typography>
+            </Box>
           </Box>
           <Box component="li">
-            linkedin: <Typography component="a" target="_blank" href='https://www.linkedin.com/in/volkankaraali/' color="primary">/volkankaraali</Typography>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <LinkedInIcon />: <Typography component="a" target="_blank" href='https://www.linkedin.com/in/volkankaraali/' color="primary">/volkankaraali</Typography>
+            </Box>
           </Box>
           <Box component="li">
-            e-mail: <Typography component="a" href='mailto:volkankaraali1@gmail.com' color="primary">volkankaraali1@gmail.com</Typography>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <EmailIcon />: <Typography component="a" href='mailto:volkankaraali1@gmail.com' color="primary">volkankaraali1@gmail.com</Typography>
+            </Box>
           </Box>
         </Box>
       </Box>

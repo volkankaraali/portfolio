@@ -1,7 +1,8 @@
 import React from 'react'
-import { Box, Card, CardHeader, CardContent, CardActions, IconButton, Typography, CardMedia, Grid, Tooltip, Chip } from '@mui/material';
+import { Box, Card, CardHeader, CardContent, CardActions, IconButton, Typography, Tooltip, Chip } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Image from 'next/image';
 
 
 interface Props {
@@ -29,18 +30,18 @@ export default function ProductCard({ item }: Props) {
           color: 'primary'
         }}
       />
-      <CardMedia
-        component="img"
-        height="200"
-        image={item.img}
+      <Image
+        height={200}
+        width={373}
+        src={item.img}
         alt={item.title}
       />
       <Box
         sx={{
-          height: 220,
+          height: 213,
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-between',
         }}
       >
         <CardContent>
@@ -71,8 +72,6 @@ export default function ProductCard({ item }: Props) {
           </Tooltip>
         </CardActions>
       </Box>
-
-
     </Card>
   )
 }

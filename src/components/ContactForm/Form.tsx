@@ -78,7 +78,6 @@ function Form() {
         setLoading(false);
         return displayToastify(err.message);
       })
-
   };
 
 
