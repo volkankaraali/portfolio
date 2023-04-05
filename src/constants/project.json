@@ -3,7 +3,7 @@
     {
       "title":"sortlify",
       "description":"an application that randomly arranges players according to the number of teams.",
-      "img":"/images/projects/sortlify.png",
+      "img":"/images/sortlify.png",
       "github":"https://github.com/volkankaraali/sortlify",
       "live":"https://sortlify.vercel.app",
       "techStack":["nextjs","mui"]
