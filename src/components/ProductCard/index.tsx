@@ -17,7 +17,6 @@ interface Props {
 }
 
 export default function ProductCard({ item }: Props) {
-  console.log(item.img)
   return (
     <Card
       sx={{
