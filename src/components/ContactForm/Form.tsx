@@ -45,7 +45,7 @@ function Form() {
       })
     }
     else {
-      return toast.success('message sent successfully', {
+      return toast.error(message , {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
