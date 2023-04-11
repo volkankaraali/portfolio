@@ -53,7 +53,7 @@ export default async function handler(
       },
       to:email,
       subject:process.env.FEEDBACK_SEND_SUBJECT,
-      html:renderTemplate(feedBackTemplate, {email})
+      html:renderTemplate(feedBackTemplate, {email,subject,message})
     }
 
     // emails sends

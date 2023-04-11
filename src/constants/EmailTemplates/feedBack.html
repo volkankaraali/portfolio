@@ -2,16 +2,36 @@
 <html>
 
 <head>
+  <style>
+    .container {
+      width: 400px;
+      background-color: #161C24;
+      border-radius: 0.3rem;
+      color: #C4CDD5;
+      padding: 0.5rem 1rem;
+    }
 
+    a {
+      color: #fca311;
+    }
+  </style>
 </head>
 
 <body>
-  <div>
-    <p>Hi, {{email}}</p>
-    <p>I recevied your message. I will be back as soon as possible. Thank you for contacting with me.</p>
-    <p>Best Regards,</p>
-    <p>Volkan KARAALİ</p>
-    <a href="https://volkankaraali.vercel.app/" target="_blank">volkankaraali.vercel.app</a>
+  <div class="container">
+    <div class="feedback-container">
+      <p>Hi, i recevied your message. I will be back as soon as possible. Thank you for contacting with me.</p>
+      <p>Best Regards,</p>
+      <p>Volkan KARAALİ</p>
+      <a href="https://volkankaraali.vercel.app/" target="_blank">volkankaraali.vercel.app</a>
+    </div>
+    <hr class="divider">
+    <div class="message-container">
+      <h2>Message</h2>
+      <p>{{email}}</p>
+      <p>{{subject}}</p>
+      <p>{{message}}</p>
+    </div>
   </div>
 </body>
 
