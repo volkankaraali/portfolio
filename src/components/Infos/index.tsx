@@ -79,7 +79,31 @@ function Infos() {
             i am passionate <Typography color="primary" component="span">frontend developer</Typography>. i am currently using <Typography color="primary" component="span">react(*jsx,*tsx)</Typography>.
           </Box>
           <Box component="li">
-            i am currently working at <Typography component="span" color="primary">-?-</Typography> company.
+            i am currently working at
+            <Typography
+              sx={{
+                px: 1,
+                borderRadius: 1,
+                mx: 1,
+                textDecoration: 'none',
+                background: "linear-gradient(to left, transparent 50%, #000 50%) right",
+                backgroundSize: "200%",
+                transition: "all .5s linear",
+                ":hover": {
+                  color: "#C60025",
+                  backgroundPosition: 'left'
+                },
+
+
+              }}
+              component="a"
+              href="https://www.ranna.com.tr"
+              target='_blank'
+              color="primary"
+            >
+              ranna
+            </Typography>
+            company.
           </Box>
           <Box component="li">
             i live in <Typography component="span" color="primary">Istanbul, Turkey.</Typography>
@@ -102,7 +126,7 @@ function Infos() {
         </Box>
       </Box>
 
-    </Box>
+    </Box >
   )
 }
 
